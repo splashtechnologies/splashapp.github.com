@@ -1,0 +1,339 @@
+/* Desktop */
+@media only screen and (min-width: 481px){
+
+body {
+	background: #ebebeb;
+	font-size: 16px;
+	font-family: "museo-sans-rounded", sans-serif;
+	}
+#bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 916px;
+	background: #ebebeb url(../img/bg.jpg) 50% 0 no-repeat;
+	z-index: 1;
+	opacity: 0;
+	}	 
+#logo {
+	position: absolute;
+	top: 75px;
+	opacity: 0;
+	left: 50%;
+	margin-left: -455px;
+	width: 298px;
+	height: 94px;
+	background: url(../img/logo.png) 0 0 no-repeat;
+	z-index: 1000;
+	}
+#tagline {
+	position: absolute;
+	top: 245px;
+	opacity: 0;
+	left: 50%;
+	margin-left: -450px;
+	width: 436px;
+	height: 288px;
+	/* background: url(../img/tagline.png) 0 0 no-repeat; */
+	z-index: 1000;
+	font-weight: 900;
+	color: rgba(255,255,255,.9);
+	font-size: 100px;
+	line-height: 90px;
+	text-shadow: 0 2px 2px rgba(0,0,0,.6);
+	}
+#notify {
+	position: absolute;
+	z-index: 1000;
+	left: 50%;
+	margin-left: -450px;
+	top: 570px;
+	opacity: 0;
+	font-weight: 700;
+	#mail-icon {
+		position: absolute;
+		width: 24px;
+		height: 21px;
+		background: url(../img/mail-icon.png) 0 0 no-repeat;
+		z-index: 200;
+		left: 21px;
+		top: 15px;
+		}
+	form {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		input[type="text"] {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: none;
+			padding: 10px 110px 10px 55px !important;
+			width: 305px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 50px;
+			background: rgba(0,0,0,.25);
+			box-shadow: inset rgba(0,0,0,.5) 0 1px 2px;
+			border-bottom: 1px solid rgba(255,255,255,.4);
+			color: rgba(255,255,255,.8);
+			text-shadow: 0 1px 1px rgba(0,0,0,.9);
+			}
+		input:focus, select:focus, textarea:focus, button:focus {
+			outline: none;
+    		box-shadow: inset 0 0 25px rgba(0,0,0,.5);
+    		}
+		input[type="submit"] {
+			display: block;
+			position: absolute !important;
+			width: 90px;
+			height: 42px;
+			border-radius: 42px;
+			border: 1px solid rgba(0,0,0,.8);
+			top: 4px;
+			margin: 0 !important;
+			right: -460px !important;
+			left: auto !important;
+			box-shadow: inset 0 rgba(255,255,255,.7) 1px 1px;
+			color: #152e3b;
+			font-weight: bold;
+			text-shadow: 0 1px 0 rgba(255,255,255,.3);
+			background: #7fd4e9; /* Old browsers */
+			background: -moz-linear-gradient(top,  #7fd4e9 0%, #398ea3 50%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7fd4e9), color-stop(50%,#398ea3)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #7fd4e9 0%,#398ea3 50%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #7fd4e9 0%,#398ea3 50%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #7fd4e9 0%,#398ea3 50%); /* IE10+ */
+			background: linear-gradient(to bottom,  #7fd4e9 0%,#398ea3 50%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fd4e9', endColorstr='#398ea3',GradientType=0 ); /* IE6-9 */
+
+			}
+		}
+		#launch-message {
+			position: absolute;
+			width: 400px;
+			top: 65px;
+			left: 21px;
+			font-size: 90%;
+			color: rgba(0,0,0,.6);
+			text-shadow: 0 1px 0 rgba(255,255,255,.4);
+			}
+	}
+	
+#footer {
+	opacity: 0;
+	position: fixed;
+	z-index: 2000;
+	bottom: 20px;
+	left: 22px;
+	background: rgba(255,255,255,.9);
+	padding: 5px 7px 2px 7px;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	border-top: 1px solid #fff;
+	#tweet, #fb, #contact {
+		float: left;
+		left: 0;
+		}
+	#fb { margin-left: -15px; }
+	#contact {
+		color: rgba(0,0,0,.5);
+		font-size: 90%;
+		color: rgba(0,0,0,.7);
+		text-shadow: rgba(255,255,255,.4);	
+		text-shadow: 0 1px 0 rgba(255,255,255,1);
+		line-height: 22px;
+		margin-left: 15px;
+		padding-right: 5px;
+		}
+	}
+		
+#iphone {
+	position: absolute;
+	top: -802px;
+	left: 50%;
+	margin-left: 86px;
+	width: 380px;
+	height: 802px;
+	position: absolute;
+	background: transparent url(../img/iphone.png) 0 0 no-repeat;
+	z-index: 1000;
+	}
+
+}
+/* end Desktop */
+
+/* Retina Desktop */
+@media
+only screen and (min-width: 481px),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+
+}
+/* end Retina Desktop */
+
+/* Mobile */
+@media only screen and (max-width: 480px){
+	
+body { 
+	background: #d0d0cf; 
+	font-family: "museo-sans-rounded", sans-serif;
+	}
+#bg { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%; 
+	background-repeat: no-repeat;
+	}
+#logo {
+	position: absolute;
+	top: -12px;
+	opacity: 0;
+	left: 21px;
+	width: 175px;
+	height: 49px;
+	background: url(../img/logo-mobile.png) 0 0 no-repeat;
+	z-index: 1000;
+	}
+#tagline {
+	position: absolute;
+	top: 60px;
+	opacity: 0;
+	left: 23px;
+	width: 270px;
+	/* background: url(../img/tagline.png) 0 0 no-repeat; */
+	z-index: 1000;
+	font-weight: 900;
+	color: #dfe0e5;
+	font-size: 50px;
+	line-height: 50px;
+	text-shadow: 0 -1px 0 rgba(255,255,255,1);
+	}
+	#tagline:before {
+		content: "Your interests, nearby.";
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #dfe0e5;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+		z-index: 500;
+		}
+#notify {
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 250px;
+	opacity: 0;
+	font-weight: 700;
+	width: 100%;
+	height: 100px;
+	#mail-icon {
+		display: none;
+		}
+	form {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		input[type="text"] {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 20px;
+			width: 250px;
+			border: none;
+			padding: 10px 15px!important;
+			height: 25px;
+			line-height: 25px;
+			border-radius: 50px;
+			background: rgba(0,0,0,.15);
+			box-shadow: inset rgba(0,0,0,.3) 0 1px 2px;
+			border-bottom: 1px solid rgba(255,255,255,.5);
+			color: #efeeea;
+			text-shadow: 0 1px 0 rgba(0,0,0,.3);
+			-webkit-appearance: none;
+			font-size: 90%;
+			}
+		input:focus, select:focus, textarea:focus, button:focus {
+			outline: none;
+    		box-shadow: inset 0 0 25px rgba(0,0,0,.5);
+    		}
+		input[type="submit"] {
+			font-size: 80%;
+			text-transform: uppercase;
+			display: block;
+			position: absolute !important;
+			width: 55px;
+			height: 38px;
+			border-radius: 38px;
+			border: 1px solid rgba(0,0,0,.6);
+			top: 4px;
+			margin: 0 !important;
+			left: 50%;
+			box-shadow: inset 0 rgba(255,255,255,.7) 1px 1px;
+			color: #152e3b;
+			font-weight: bold;
+			text-shadow: 0 1px 0 rgba(255,255,255,.3);
+			background: #7fd4e9; /* Old browsers */
+			background: -moz-linear-gradient(top,  #7fd4e9 0%, #398ea3 50%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7fd4e9), color-stop(50%,#398ea3)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #7fd4e9 0%,#398ea3 50%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #7fd4e9 0%,#398ea3 50%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #7fd4e9 0%,#398ea3 50%); /* IE10+ */
+			background: linear-gradient(to bottom,  #7fd4e9 0%,#398ea3 50%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fd4e9', endColorstr='#398ea3',GradientType=0 ); /* IE6-9 */
+
+			}
+		}
+		#launch-message {
+			position: absolute;
+			width: 250px;
+			top: 55px;
+			left: 30px;
+			color: rgba(82,77,63,.7);
+			font-size: 80%;
+			text-shadow: 0 1px 0 rgba(255,255,255,.7);
+			}
+	}
+#iphone {
+	opacity: 0;
+	position: relative;
+	top: 360px;
+	width: auto;
+	height: 802px;
+	position: absolute;
+	background: transparent url(../img/mobile-iphone.png) 0 0 no-repeat;
+	z-index: 1000;
+	background-size: 100%;
+	margin-left: 15px;
+	}
+#footer { display: none; }
+}
+/* end Mobile */
+
+/* Retina Mobile */
+@media
+only screen and (max-width: 480px),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+#logo {
+	background-image: url(../img/logo-mobile@2x.png);
+	background-size: 175px 49px;
+	}  
+
+}
+/* end Retina Mobile */
