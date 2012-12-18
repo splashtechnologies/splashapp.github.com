@@ -43,7 +43,7 @@ if (windowSize > 480) {
 	/* fix input display */
 	$('#notify form input[type="submit"]').attr('value', 'Go');
 	$('#notify form input[type="submit"]').css('left', windowSize - 79 + 'px');
-	$('#notify form input[type="text"]').css('width', (windowSize - 70) +  'px');
+	$('#notify form input[type="text"]').css('width', (windowSize - 70) +  'px !important');
 	/* end fix input display */
 	
 	/* fix display of iphone */
