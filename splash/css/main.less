@@ -3,7 +3,7 @@
 
 body {
 	background: #ebebeb;
-	font-size: 16px;
+	font-size: 16px !important;
 	font-family: "museo-sans-rounded", sans-serif;
 	}
 #bg {
@@ -95,7 +95,7 @@ body {
 			border: 1px solid rgba(0,0,0,.8);
 			top: 4px;
 			margin: 0 !important;
-			right: -460px !important;
+			right: -465px !important;
 			left: auto !important;
 			box-shadow: inset 0 rgba(255,255,255,.7) 1px 1px;
 			color: #152e3b;
@@ -131,7 +131,29 @@ body {
 	text-shadow: 0 1px 0 rgba(255,255,255,.4);
 	font-family: "museo-sans-rounded", sans-serif;
 	}
-			
+	
+.signup_error {
+	position: absolute;
+	top: -35px !important;
+	left: -27px;
+	width: 300px;
+	color: rgba(0,0,0,.8) !important;
+	font-size: 115%;
+	text-shadow: 0 1px rgba(255,255,255,.1) !important;
+	}
+
+.lrdiscoverwidget .lrhidden {
+	background: rgba(0,0,0,.9);
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	z-index: 5000;
+	}
+.lrhidden {
+	display: none !important;
+	}				
 #footer {
 	opacity: 0;
 	position: fixed;

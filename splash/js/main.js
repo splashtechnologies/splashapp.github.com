@@ -1,3 +1,7 @@
+/* hide .lrhidden for 2 seconds */
+window.setInterval(function() { $('.lrhidden').css('display', 'block !important');},2000);
+/* end hide .lrhidden for 2 seconds */
+
 /* input focus */
 var tempInput = 'email@address.com';
 $('#notify form input[type="text"]').focus(function() {
