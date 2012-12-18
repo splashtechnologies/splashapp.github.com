@@ -18,6 +18,7 @@ $('#notify form input[type="text"]').blur(function() {
 /* end input focus */
 
 var windowSize = $(document).width();
+//console.log(windowSize);
 
 if (windowSize > 480) {
 	var bgImage = 'img/bg.jpg';
@@ -36,15 +37,18 @@ if (windowSize > 480) {
 			});
 		});
 } else {
-	console.log('mobile');
+	//console.log('mobile');
 	var bgImage = 'img/mobile-bg.jpg';
 	var img = '<img src="' + bgImage + '"/>';
 	
+	window.setInterval(function() { 
+	console.log(windowSize);
 	/* fix input display */
 	$('#notify form input[type="submit"]').attr('value', 'Go');
-	$('#notify form input[type="submit"]').css('left', windowSize - 79 + 'px');
-	$('#notify form input[type="text"]').css('width', (windowSize - 70) +  'px !important');
+	$('#notify form input[type="submit"]').css('right', '-' + (windowSize - 24) + 'px');
+	$('#notify form input[type="text"]').css('width', (windowSize - 70) +  'px');
 	/* end fix input display */
+	}, 1000);
 	
 	/* fix display of iphone */
 	$('#iphone').css('width', windowSize - 30 + 'px');
@@ -56,7 +60,7 @@ if (windowSize > 480) {
 		$('#logo').animate({'top': '23px', 'opacity': 1}, 100, function() {
 				$('#tagline').animate({'top': '95px', 'opacity': 1}, 100, function() {
 					$('#notify').animate({'top': '280px', 'opacity': 1}, 100, function() {
-						$('#iphone').animate({'opacity': 1, 'top': '390px'}, 200);
+						$('#iphone').animate({'opacity': 1, 'top': '430px'}, 200);
 						});		
 					});
 				});
