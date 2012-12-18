@@ -1,5 +1,5 @@
 /* hide .lrhidden for 2 seconds */
-window.setInterval(function() { $('.lrhidden').css('display', 'block !important');},2000);
+//window.setInterval(function() { $('.lrhidden').css('opacity', '1 !important');},2000);
 /* end hide .lrhidden for 2 seconds */
 
 /* input focus */
