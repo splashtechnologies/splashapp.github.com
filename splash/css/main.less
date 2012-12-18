@@ -208,19 +208,31 @@ body {
 }
 /* end Desktop */
 
-/* Retina Desktop */
-@media
-only screen and (min-width: 481px),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-
-}
-/* end Retina Desktop */
+/* iPad Portrait and Landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	
+	#logo { margin: 0; left: 25px; }
+	#tagline { margin: 0; left: 25px; font-size: 80px; }
+	#iphone { margin: 0; right: 0; left: auto; }
+	#notify {
+		left: 25px;
+		margin: 0;
+		width: 400px;
+		form {
+			input[type="text"] {
+				width: 200px;
+				}
+			input[type="submit"] {
+				left: auto !important;
+				right: -360px !important;
+				}
+			}
+		#launch-message { width: 320px; }
+		}
+	}
+/* end iPad Portrait */
 
 /* Mobile */
 @media only screen and (max-width: 480px){
@@ -278,7 +290,7 @@ body {
 	opacity: 0;
 	font-weight: 700;
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	overflow: hidden;
 	#mail-icon {
 		display: none;
@@ -369,6 +381,32 @@ body {
 .lrdiscoverwidget .site-powered-by:first-letter{
 	text-transform: capitalize
 	}
+.lrdiscoverwidget .site-powered-by:first-letter{
+	text-transform: capitalize
+	}
+	
+.signup_error {
+	position: absolute;
+	top: -35px !important;
+	left: -27px;
+	width: 300px;
+	color: rgba(0,0,0,.8) !important;
+	font-size: 115%;
+	text-shadow: 0 1px rgba(255,255,255,.1) !important;
+	}
+
+.lrhidden {
+	background: rgba(0,0,0,.9);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	margin: 0 !important;
+	padding: 10px;
+	z-index: 5000;
+	}
 #iphone {
 	opacity: 0;
 	position: relative;
@@ -384,6 +422,39 @@ body {
 #footer { display: none; }
 }
 /* end Mobile */
+
+/* all Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+	#notify #mail-icon {
+		background: url(../img/mail-icon@2x.png);
+		background-size: 24px 21px;
+		}
+	.lrdiscoverwidget .site-powered-by a {
+		background-image: url(../img/launchrock-logo@2x.png) !important;
+		background-size: 94px 14px;
+		}
+	}
+/* end all Retina */
+
+/* Retina Desktop */
+@media
+only screen and (min-width: 481px),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+
+	}
+/* end Retina Desktop */
 
 /* Retina Mobile */
 @media

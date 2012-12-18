@@ -18,7 +18,7 @@ $('#notify form input[type="text"]').blur(function() {
 /* end input focus */
 
 var windowSize = $(document).width();
-//console.log(windowSize);
+console.log(windowSize);
 
 if (windowSize > 480) {
 	var bgImage = 'img/bg.jpg';
@@ -42,11 +42,12 @@ if (windowSize > 480) {
 	var img = '<img src="' + bgImage + '"/>';
 	
 	window.setInterval(function() { 
-	console.log(windowSize);
+	//console.log(windowSize);
 	/* fix input display */
 	$('#notify form input[type="submit"]').attr('value', 'Go');
 	$('#notify form input[type="submit"]').css('right', '-' + (windowSize - 24) + 'px');
 	$('#notify form input[type="text"]').css('width', (windowSize - 70) +  'px');
+	$('.lrhidden').css('width', (windowSize - 80) + 'px');
 	/* end fix input display */
 	}, 1000);
 	
